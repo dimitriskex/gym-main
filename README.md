@@ -1,48 +1,24 @@
-# gym
-====================================
+# BoltGym Website
 
-PROBLEMS
+## Overview
+BoltGym is a comprehensive web application designed to enhance the user experience and streamline the operations of a gym. The website offers various functionalities including user and admin interfaces, announcement postings, reservation systems, and gym service management.
+
+## Technologies Used
+- **Frontend**: HTML, CSS
+- **Backend**: Python (Flask)
+- **Database**: MySQL
+
+## Features
+### User Interface
+- **Home Page**: Provides information about the gym and its services.
+- **Announcements**: Displays the latest gym announcements.
+- **Reservation History**: Allows users to view their reservation history, make new reservations, and cancel existing ones.
+- **Login System**: Secure login for users and administrators.
+
+### Admin Interface
+- **Manage Registration Requests**: Admins can approve or reject user registration requests.
+- **Manage Users**: Admins can add, update, and delete user information.
+- **Manage Gym Services**: Admins can add, update, and delete gym services and assign trainers.
+- **Manage Announcements**: Admins can post, update, and delete announcements.
 
 
-db password 1234 ????
-
-er model  ????
-
-COUNT fix
-
-
-====================================
-1. **Σχεδίαση Βάσης Δεδομένων:**
-   - Καθορίστε τους πίνακες που θα χρησιμοποιηθούν για την αποθήκευση δεδομένων.
-   - Κάντε κατάλληλες σχέσεις μεταξύ των πινάκων.
-
-2. **Υλοποίηση REST APIs:**
-   - Αναπτύξτε REST APIs για τις απαραίτητες λειτουργίες (π.χ., διαχείριση αιτημάτων εγγραφής, διαχείριση χρηστών, κρατήσεις, κλπ.).
-
-3. **Χρησιμοποιήστε Κατάλληλες Γλώσσες και Εργαλεία:**
-   - Επιλέξτε γλώσσες προγραμματισμού και εργαλεία που θα χρησιμοποιηθούν για τον πηγαίο κώδικα (π.χ., HTML, CSS, JavaScript, PHP, Java).
-
-4. **Ανάπτυξη Χρηστικού Interface:**
-   - Σχεδιάστε και αναπτύξτε το χρηστικό interface του συστήματος με χρήση HTML, CSS, JavaScript.
-   - Βεβαιωθείτε ότι το interface είναι ευανάγνωστο, φιλικό προς τον χρήστη και ανταποκρίνεται σε διάφορες οθόνες (responsive design).
-
-5. **Υλοποίηση Διαχειριστικού Συστήματος:**
-   - Αναπτύξτε το διαχειριστικό σύστημα που θα επιτρέπει τις λειτουργίες διαχείρισης που περιγράψατε (CRUD για χρήστες, δομικά στοιχεία, ανακοινώσεις).
-
-6. **Ενσωμάτωση Μηχανισμών Ασφάλειας:**
-   - Εφαρμόστε μηχανισμούς ασφάλειας για προστασία των δεδομένων και αποφυγή επιθέσεων (π.χ., ασφάλιση κωδικών, επικύρωση εγγραφών).
-
-7. **Υλοποίηση Σχολιασμού:**
-   - Προσθέστε επαρκή σχόλια στον πηγαίο κώδικα για να διευκολύνετε την κατανόηση και τη συντήρησή του.
-
-8. **Εφαρμογή Μηχανισμών Χειρισμού Εξαιρέσεων:**
-   - Ενσωματώστε μηχανισμούς χειρισμού εξαιρέσεων για τη διασφάλιση της σταθερότητας του συστήματος.
-
-9. **Δοκιμές:**
-   - Διεξάγετε δοκιμές στο σύστημα για να επιβεβαιώσετε τη σωστή λειτουργία του.
-
-10. **Συντήρηση και Βελτιώσεις:**
-    - Καθοδηγήστε την εφαρμογή στην παραγωγή και παρακολουθήστε τη λειτουργία της.
-    - Προσθέστε νέες λειτουργίες ή βελτιώστε τις υπάρχουσες ανάλογα με τις ανάγκες.
-
-Αυτά τα βήματα θα σας βοηθήσουν να ξεκινήσετε την υλοποίηση του δικτυοκεντρικού πληροφοριακού συστήματος για το γυμναστήριο που περιγράψατε.
