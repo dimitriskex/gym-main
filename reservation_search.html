@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Search</title>
+    <link rel="icon" href="icong.png" type="image/png">
+</head>
+<style>
+    body {
+        background: linear-gradient(180deg, #2c3e50 0% 100%);
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+
+    .h {
+        color: aliceblue
+    }
+
+    form {
+        background-color: #1f2b38;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        margin: 50px auto;
+        max-width: 400px;
+        margin: 50px auto;
+    }
+
+    label {
+        display: block;
+        margin: 15px 0 5px;
+        color: #fff;
+    }
+
+    input {
+    width: 60%;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        margin: 30px auto;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+
+    <div class="h">
+        <h2>Reservations</h2>
+    </div>
+
+    <form method="post" action="{{ url_for('reservations') }}">
+        <h2>Make Reservations</h2>
+    
+        <label for="programid">Program Id</label>
+        <input type="text" name="programid" placeholder="001" required>
+        <br>
+    
+        <label for="programtime">Choose Date</label>
+        <input type="datetime-local" name="programtime">
+    
+        <br>
+        <button type="submit">Make Reservation</button>
+        <br>
+    </form>
+    <form method="post" action="{{ url_for('reservations_cancel') }}">
+        <h2>Cancel Reservations</h2>
+    
+        <label for="programid">Program Id</label>
+        <input type="text" name="programid" placeholder="001" required>
+        <br>
+    
+        <label for="programtime">Choose Date</label>
+        <input type="datetime-local" name="programtime">
+    
+        <br>
+        <button type="submit">Cancel Reservation</button>
+        <br>
+    </form>
+</body>
+
+</html>

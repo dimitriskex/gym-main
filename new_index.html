@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoltGym</title>
+    <link rel="icon" href="icong.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #2c3e50 0% 100%);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            padding: 20px 0;
+            text-align: left;
+            border-bottom: 4px solid #4CAF50;
+            border-radius: 0 0 10px 10px;
+        }
+
+        h1{
+            margin-left: 10px;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-button,
+        .admin-button {
+            margin-left: 10px;
+            padding: 10px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .admin-button {
+            background-color: #3498db;
+        }
+
+        .admin-button:hover{
+            background-color: blue;
+        }
+
+        .login-button:hover{
+            background-color:darkgreen;
+        }
+
+        nav {
+            background: linear-gradient(45deg, #18232d, #1f2b38);
+            color: #fff;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #1f2b38;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .subscribe-section {
+            background-color: #1a252f; /* Set background color to match the footer */
+            padding: 20px; /* Adjust padding as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px; /* Adjust margin as needed */
+        }
+
+        .subscribe-section h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-section form {
+            display: flex;
+            align-items: center;
+        }
+
+        .subscribe-section input[type="email"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .subscribe-section button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-section button[type="submit"]:hover {
+            background-color:darkgreen;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 4px solid #4CAF50;
+            border-radius: 10px 10px 0 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="title-container">
+            <h1 style="flex: 1;">BoltGym</h1>
+            <div class="login-container">
+                <a href="/logout" class="login-button">Log Out</a>
+                <a href="/login" class="login-button">Login</a>
+                <a href="/admin_general" class="admin-button">Admin</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/announcements">Announcements</a></li>
+            <li><a href="/reservation_history">Reservation History</a></li>
+            <li><a href="/reservations">Reservations</a></li>
+            <li><a href="/gym_services">Gym Services</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Other content of your home page -->
+        <h2>About us:</h2>
+        <p>Welcome to BoltGym, where fitness meets passion, and every drop of sweat fuels a journey to a healthier, stronger you.
+            Established with a commitment to transforming lives through fitness, our gym is not just a place to work out; it's a community that empowers and inspires.
+            At BoltGym, we believe that fitness is not a destination but a way of life. Our state-of-the-art facilities, expert trainers, and diverse range of classes cater to fitness enthusiasts of all levels. Whether you're a seasoned athlete or a beginner taking your first steps on the path to wellness,
+            we are here to support and guide you.</p>
+        <p>Our gym offers:</p>
+        <ul>
+            <li>Modern workout equipment</li>
+            <li>Personal training sessions</li>
+            <li>Group fitness classes</li>
+            <li>Nutritional counseling</li>
+            <li>Specialized programs for all fitness levels</li>
+        </ul>
+        <p>Join us today and embark on a journey to a healthier lifestyle!</p>
+
+        <div class="subscribe-section">
+            <h3>Subscribe for Daily Health and Fitness Emails</h3>
+            <form action="/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 BoltGym. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

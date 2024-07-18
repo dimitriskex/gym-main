@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoltGym</title>
+    <link rel="icon" href="icong.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #2c3e50 0% 100%);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            padding: 20px 0;
+            text-align: left;
+            border-bottom: 4px solid #4CAF50;
+            border-radius: 0 0 10px 10px;
+        }
+
+       
+
+     
+
+         
+        
+        nav {
+            background: linear-gradient(45deg, #18232d, #1f2b38);
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #1f2b38;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 60px; /* Add even more space between heading and buttons */
+        }
+
+        main .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px; /* Add margin between buttons and other content */
+        }
+
+        main button {
+            flex: 1;
+            padding: 20px; /* Add padding for better visual appearance */
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        main button:hover {
+             background-color: darkgreen;
+        }
+
+        main .button-description {
+            text-align:center;
+            color: #fff;
+            margin-top: 5px; /* Add some space between button and paragraph */
+        }
+
+        main .button-container a {
+            text-decoration: none; /* Remove underline from anchor tags */
+        }
+
+        footer {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 4px solid #4CAF50;
+            border-radius: 10px 10px 0 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BoltGym</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/announcements">Announcements</a></li>
+            <li><a href="/reservation_history">Reservation History</a></li>
+            <li><a href="/reservations">Reservations</a></li>
+            <li><a href="/gym_services">Gym Services</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Admin General</h2>
+        <!-- Other content of your home page -->
+        <div class="button-container">
+            <a href="/status_view"><button>Manage Registration Requests</button></a>
+            <a href="/users_view"><button>Manage Users</button></a>
+            <a href="/A3_button"><button>Manage System Info</button></a>
+            <a href="/announcements_view"><button>Manage Announcements</button></a>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2023 BoltGym. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

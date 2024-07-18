@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Page</title>
+    <link rel="icon" href="icong.png" type="image/png">
+</head>
+<style>
+        body {
+                background: linear-gradient(180deg, #2c3e50 0% 100%);
+                font-family: 'Arial', sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+               color: #fff;
+            }
+
+            .h{
+                color:aliceblue
+                
+            
+
+            }
+
+            form {
+            background-color: #1f2b38;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 50px auto;max-width: 400px;
+            margin: 50px auto;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color:#fff;
+        }
+
+        form select{
+            padding:3px 50px;
+        }
+        
+        button{
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+       
+
+
+</style>
+
+
+
+<body>
+
+    <div class="h">
+    <h2>Admin Section</h2>
+    </div>
+
+    <form method="post" action="{{ url_for('users_create') }}">
+        <h2>Create Form</h2>
+
+
+        <label for="role">role</label>
+        <select id ="Role">
+            <option value="Client">User</option>
+            <option value="Trainer">Trainer</option>
+        </select>
+
+        <label for="userid">User Id</label>
+        <input type="text" name="userid" placeholder="001" required>
+        <br>
+
+
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" placeholder="Jim" required>
+        <br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" placeholder="Panopoulos" required>
+        <br>
+        
+        
+        <label for="country">Country</label>
+        <input type="text" name="country" placeholder="Greece" required>
+        <br>
+        
+        <label for="city">City</label>
+        <input type="text" name="city" placeholder="Athens" required>
+        <br>
+        
+        <label for="address">Address</label>
+        <input type="text" name="address" placeholder="Lianopoulou 6" required>
+        <br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="test@gmail.com" required>
+        <br>
+       
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="jim23" required>
+        <br>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="************" required>
+        <br>
+        <br>
+        
+        <button type="submit">Create</button>
+        <br>
+        
+          
+     </form>
+</body>
+</html>

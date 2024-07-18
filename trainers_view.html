@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoltGym</title>
+    <link rel="icon" href="icong.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #2c3e50 0% 100%);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #4CAF50;
+            border-radius: 0 0 10px 10px;
+        }
+
+        nav {
+            background: linear-gradient(45deg, #18232d, #1f2b38);
+            color: #fff;
+            padding: 10px 0;
+            
+         
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #1f2b38;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
+        }
+        
+        button{
+            display:flexbox;
+            margin: 20px 10px; /* Add some margin between buttons */
+            padding: 20px 40px; /* Add padding for better visual appearance */
+            font-size: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        main button:hover {
+            background-color: #45a049;
+        }
+
+        button:hover{
+            color:darkgreen
+
+
+        }
+
+        main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+main th, main td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #4CAF50;
+}
+
+       
+        footer {
+            background: linear-gradient(45deg, #1a252f, #233440);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 4px solid #4CAF50;
+            border-radius: 10px 10px 0 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BoltGym</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/announcements">Announcements</a></li>
+            <li><a href="/reservation_history">Reservation History</a></li>
+            <li><a href="/reservations">Reservations</a></li>
+            <li><a href="/gym_services">Gym Services</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Trainers</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trainer Id</th>
+                    <th>Trainer Name</th>
+                    
+                               
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in trainers %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+       
+        <a href="/create_button_a3_trainers"><button>CREATE</button></a>
+        <a href="/update_button_a3_trainers"><button>EDIT</button></a>
+        <a href="/delete_button_a3_trainers"><button>DELETE</button></a>
+    </main>
+
+    <footer>
+        &copy; 2023 BoltGym. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
